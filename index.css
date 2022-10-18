@@ -1,0 +1,415 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.logo img {
+  width: 120px;
+  margin-left: 100px;
+  margin-top: 20px;
+  background-color: blue;
+}
+form {
+  margin-left: 40%;
+  padding-bottom: 10px;
+}
+form .search_box {
+  height: 40px;
+  width: 200px;
+  box-shadow: 0px 2px 2px 0 rgb(0 0 0 25%);
+}
+form .search {
+  height: 60px;
+  width: 80px;
+  color: #fff;
+  cursor: pointer;
+}
+form .login {
+  width: 100px;
+  height: 30px;
+  margin-left: 30px;
+  color: blue;
+  font-weight: 700;
+}
+form #sell {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+  color: #fff;
+  margin-left: 30px;
+}
+form #more {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+  color: #fff;
+  margin-left: 30px;
+}
+#more {
+  position: relative;
+  display: inline-block;
+}
+.dropdown_content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  z-index: 1;
+  box-shadow: inset;
+}
+.dropdown_content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown_content a:hover {
+  background-color: #ddd;
+}
+form #more:hover .dropdown_content {
+  display: block;
+}
+form #cart {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+  color: #fff;
+  margin-left: 30px;
+}
+nav {
+  background-color: blue;
+}
+.heading_categories {
+  background: #fff;
+  justify-content: center;
+  height: 112px;
+  border-bottom: 2px solid lightgray;
+}
+.heading_categories .cat_image {
+  width: 100px;
+}
+.heading_categories_list {
+  list-style: none;
+  justify-content: space-between;
+  max-width: 1280px;
+  margin: 10px;
+  display: flex;
+}
+.heading_item_name {
+  text-align: center;
+  font-weight: 500;
+  color: black;
+}
+.heading_item_name:hover {
+  color: blue;
+}
+.grocery {
+  position: relative;
+  display: inline-block;
+}
+.dropdown_grocery {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  z-index: 1;
+  box-shadow: inset;
+}
+.dropdown_grocery a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown_grocery a:hover {
+  background-color: #ddd;
+}
+.grocery:hover .dropdown_grocery {
+  color: blue;
+  display: block;
+}
+/* image slider */
+.slide {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  margin-top: 10%;
+}
+.swiper {
+  width: 100%;
+  height: 300px;
+}
+.swiper-slide img {
+  width: 100%;
+}
+.card {
+  display: flex;
+  margin-top: 50px;
+  margin-left: 25%;
+  border: 2px solid goldenrod;
+  width: 680px;
+  border-radius: 20px;
+}
+.card #axis,
+#discount {
+  margin-left: 30px;
+}
+.card #icici,
+#axis,
+#discount {
+  margin: 10px 10px;
+}
+.card #icici {
+  background: linear-gradient(to right, orange, orangered);
+  color: #fff;
+  font-size: large;
+  width: 100px;
+  padding: 10px;
+  border-bottom: 2px solid black;
+  border-left: 2px solid black;
+}
+.card #axis {
+  background-color: rgb(90, 22, 22);
+  color: #fff;
+  font-size: large;
+  width: 100px;
+  padding: 10px;
+  border-bottom: 2px solid black;
+  border-left: 2px solid black;
+}
+.card #discount {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: large;
+  padding-top: 10px;
+}
+.card #move {
+  width: 50px;
+  height: 50px;
+  background-color: yellow;
+  border-radius: 50%;
+  margin-top: 10px;
+  border: none;
+}
+/* creation of card view */
+.head h2 {
+  text-align: center;
+  color: purple;
+  margin-top: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+.card-view {
+  display: flex;
+  margin-top: 40px;
+  width: 100%;
+}
+.card-view .first {
+  margin-left: 20px;
+  background-color: purple;
+  width: 33.33%;
+  display: flex;
+  color: #fff;
+  font-size: large;
+  padding: 10px;
+  border: 3px solid gold;
+  border-radius: 5px;
+  border-bottom: 10px solid gold;
+}
+.card-view .first h3 {
+  margin-top: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 30px;
+}
+.card-view .first img {
+  width: 150px;
+  margin-left: 90px;
+}
+.card-view .second {
+  margin-left: 20px;
+  background-color: purple;
+  width: 33.33%;
+  display: flex;
+  color: #fff;
+  font-size: large;
+  padding: 10px;
+  border: 3px solid gold;
+  border-radius: 5px;
+  border-bottom: 10px solid gold;
+}
+.card-view .second h3 {
+  margin-top: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 30px;
+}
+.card-view .second img {
+  width: 150px;
+  margin-left: 90px;
+}
+.card-view .third {
+  margin-left: 20px;
+  margin-right: 10px;
+  background-color: purple;
+  width: 33.33%;
+  display: flex;
+  color: #fff;
+  font-size: large;
+  padding: 10px;
+  border: 3px solid gold;
+  border-radius: 5px;
+  border-bottom: 10px solid gold;
+}
+.card-view .third h3 {
+  margin-top: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 30px;
+}
+.card-view .third img {
+  width: 150px;
+  margin-left: 90px;
+}
+/* creation of chatbot  */
+.container {
+  background-color: purple;
+  margin: 10px 10px;
+  width: 30%;
+  margin-left: 35%;
+  box-shadow: 0 0 0 0 black;
+}
+.chat-header {
+  background-color: aliceblue;
+  color: purple;
+  font-size: large;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  padding: 10px 0;
+}
+.chat-header .title {
+  padding-left: 130px;
+}
+.chat-body {
+  height: 500px;
+  display: flex;
+}
+.chat-input {
+  display: flex;
+  align-items: center;
+}
+#txtinput {
+  line-height: 30px;
+  padding: 8px 10px;
+  border: none;
+  width: 300px;
+  outline: none;
+  background-color: aliceblue;
+}
+.input-sec {
+  flex: 9;
+}
+.send {
+  /* flex: 1; */
+  padding-right: 5px;
+}
+.container .send img {
+  width: 35px;
+}
+
+/* creation of Footer section */
+footer {
+  background-color: #ddd;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: smaller;
+}
+footer .desc {
+  padding-top: 30px;
+}
+footer .cost {
+  margin-top: 20px;
+}
+footer p {
+  margin-top: 20px;
+  margin-left: 5px;
+}
+footer .extra {
+  display: flex;
+  background-color: darkblue;
+  color: #fff;
+}
+footer .extra h4 {
+  margin-top: 20px;
+  margin-left: 5px;
+  color: gray;
+}
+footer .help,
+.policy,
+.social,
+.mail,
+.office {
+  margin-left: 50px;
+}
+/* creation of overlay form */
+.wrap {
+  max-width: 350px;
+  margin: auto;
+  padding: 20px;
+  background: #fff;
+  margin-top: 100px;
+  border-radius: 20px;
+}
+.wrap h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 2em;
+  text-align: center;
+}
+.wrap form {
+  margin-top: 10px;
+  margin-left: 10px;
+  padding-bottom: 10px;
+}
+.wrap label {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+  color: rgb(186, 92, 92);
+}
+.wrap input {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  border: none;
+  outline: none;
+  border: 1px solid gray;
+  font-size: 15px;
+  border-radius: 5px;
+}
+.wrap button {
+  width: 210px;
+  height: 40px;
+  font-size: large;
+  background-color: red;
+  border-radius: 20px;
+}
+.wrap button:hover {
+  background-color: orange;
+}
+#myOverlay {
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background: rgba(0 0 0 0.5);
+}
+.closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  cursor: pointer;
+  color: #fff;
+}
+.closebtn:hover {
+  color: #ccc;
+}

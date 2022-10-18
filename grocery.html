@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Groceries | Flipkart</title>
+    <link rel="stylesheet" href="grocery.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <!-- creation of navigation area -->
+    <nav class="heading_navigation flex" id="navigation_heading">
+      <div class="nav_container flex">
+        <div class="logo flex">
+          <img src="./img/flipkart logo.png" alt="logo" align="center" />
+        </div>
+        <div class="search_bar_container">
+          <div class="search_bar">
+            <form class="search">
+              <input
+                type="text"
+                placeholder="search for products, brands and more"
+                class="search_box"
+              />
+              <span><i class="fa fa-search"></i></span>
+              <button class="login" type="submit" onclick="openForm()">
+                LOGIN
+              </button>
+              <span id="sell">Become a Seller</span>
+              <span id="more">
+                <div>
+                  More <i class="fa fa-angle-down"></i>
+
+                  <div class="dropdown_content">
+                    <a href="#">Notification Preference</a>
+                    <a href="#">24x7 Customer Care</a>
+                    <a href="#">Advertise</a>
+                    <a
+                      href="https://play.google.com/store/apps/details?id=com.flipkart.android&hl=en"
+                      >Download App</a
+                    >
+                  </div>
+                </div>
+              </span>
+              <span id="cart"><i class="fa fa-cart-plus"></i> Cart</span>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Products section -->
+    <div class="card">
+      <div class="sauce">
+        <img src="./img/tomato sauce.jpg" />
+        <div class="count">
+          <input type="number" class="value" id="value" />
+        </div>
+        <h2>Tomato Sauce</h2>
+        <p><b>Rs:80</b> per</p>
+        <p>
+          Spicy tomato Sauce fresh from the farms of India which gives you the
+          energy to start the day with Freshness.
+        </p>
+        <center>
+          <h1>viki</h1>
+          <button id="order1">Orders</button>
+          <div class="modal1" id="myModal1">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <img src="./img/tomato sauce.jpg" />
+              <h2>Tomato Sauce</h2>
+              <p><b>Rs:80</b> per</p>
+              <p>
+                Spicy tomato Sauce fresh from the farms of India which gives you
+                the energy to start the day with Freshness.
+              </p>
+              <p id="qty">Quantity Ordered:</p>
+              <p id="dig1">Total Amount: Rs</p>
+              <button id="confirm-order" onclick="myFunc()">
+                Confirm Order
+              </button>
+            </div>
+          </div>
+        </center>
+      </div>
+      <div class="greens">
+        <img src="./img/greens.jpg" />
+        <div class="count">
+          <input type="number" class="value" id="value2" />
+        </div>
+        <h2>Fresh Greens</h2>
+        <p><b>Rs:20</b> per pack</p>
+        <p>
+          The Fresh Greens are direct from farms to your Kitchen Which provides
+          you a healthier life and make your day in all the essential Vitamins
+          and Minerals including Iron.
+        </p>
+        <center>
+          <button id="order2">Order</button>
+          <div class="modal2" id="myModal2">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <img src="./img/greens.jpg" />
+              <h2>Fresh Greens</h2>
+              <p><b>Rs:20</b> per pack</p>
+              <p>
+                The Fresh Greens are direct from farms to your Kitchen Which
+                provides you a healthier life and make your day in all the
+                essential Vitamins and Minerals including Iron.
+              </p>
+              <p id="qty2">Quantity Ordered:</p>
+              <p id="dig2">Total Amount: Rs</p>
+              <button id="confirm-order" onclick="myFunc()">
+                Confirm Order
+              </button>
+            </div>
+          </div>
+        </center>
+      </div>
+      <div class="dairy">
+        <img src="./img/dairy.jpg" />
+        <div class="count">
+          <input type="number" class="value" id="value3" />
+        </div>
+        <h2>Dairy Products</h2>
+        <p><b>Rs:150</b> per pack</p>
+        <p>
+          Fresh and Healthier Dairy products are from recognised farms and
+          factories to enjoy with your families and be healthier in all the day
+          long.
+        </p>
+        <center>
+          <button id="order3">Order</button>
+          <div class="modal3" id="myModal3">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <img src="./img/dairy.jpg" />
+              <h2>Dairy Products</h2>
+              <p><b>Rs:150</b> per pack</p>
+              <p>
+                Fresh and Healthier Dairy products are from recognised farms and
+                factories to enjoy with your families and be healthier in all
+                the day long.
+              </p>
+              <p id="qty3">Quantity ordered:</p>
+              <p id="dig3">Total Amount: Rs</p>
+              <button id="confirm-order" onclick="myFunc()">
+                Confirm Order
+              </button>
+            </div>
+          </div>
+        </center>
+      </div>
+      <div class="spice">
+        <img src="./img/spices.jpg" />
+        <div class="count">
+          <input type="number" class="value" id="value4" />
+        </div>
+        <h2>Royal Indian Spices</h2>
+        <p><b>Rs:300</b> per pack</p>
+        <p>
+          The Royal spices would make your food even more Tasty and more spicer
+          which makes your family members to be closer and make your day
+          special.
+        </p>
+        <center>
+          <button id="order4">Order</button>
+          <div class="modal4" id="myModal4">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <img src="./img/spices.jpg" />
+              <h2>Royal Indian Spices</h2>
+              <p><b>Rs:300</b> per pack</p>
+              <p>
+                The Royal spices would make your food even more Tasty and more
+                spicer which makes your family members to be closer and make
+                your day special.
+              </p>
+              <p id="qty4">Quantity Ordered:</p>
+              <p id="dig4">Total Amount: Rs</p>
+              <button id="confirm-order" onclick="myFunc()">
+                Confirm Order
+              </button>
+            </div>
+          </div>
+        </center>
+      </div>
+      <div class="fruit">
+        <img src="./img/fruits.jpg" />
+        <div class="count">
+          <input type="number" class="value" id="value5" />
+        </div>
+        <h2>Fresh Juicy Fruits</h2>
+        <p><b>Rs:120</b> per kg</p>
+        <p>
+          These are the Fresh Juicy fruits for your health which gives you the
+          Energy to be Shineful Throughout the day without any Tiredness.
+        </p>
+        <center>
+          <button id="order5">Order</button>
+          <div class="modal5" id="myModal5">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <img src="./img/fruits.jpg" />
+              <h2>Fresh Juicy Fruits</h2>
+              <p><b>Rs:120</b> per kg</p>
+              <p>
+                These are the Fresh Juicy fruits for your health which gives you
+                the Energy to be Shineful Throughout the day without any
+                Tiredness.
+              </p>
+              <p id="qty5">Quantity Ordered:</p>
+              <p id="dig5">Total Amount: Rs</p>
+              <button id="confirm-order" onclick="myFunc()">
+                Confirm Order
+              </button>
+            </div>
+          </div>
+        </center>
+      </div>
+    </div>
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- script for modal box -->
+    <script>
+      var modal1 = document.getElementById("myModal1");
+      var modal2 = document.getElementById("myModal2");
+      var modal3 = document.getElementById("myModal3");
+      var modal4 = document.getElementById("myModal4");
+      var modal5 = document.getElementById("myModal5");
+      var btn1 = document.getElementById("order1");
+      var btn2 = document.getElementById("order2");
+      var btn3 = document.getElementById("order3");
+      var btn4 = document.getElementById("order4");
+      var btn5 = document.getElementById("order5");
+      var span = document.getElementsByClassName("close");
+      // getting input value of quantity ordered.
+      var int1 = document.querySelector("#value");
+      var int2 = document.querySelector("#value2");
+      var int3 = document.querySelector("#value3");
+      var int4 = document.querySelector("#value4");
+      var int5 = document.querySelector("#value5");
+      // Insering the total amount of Purchase.
+      btn1.onclick = function () {
+        modal1.style.display = "block";
+        document.getElementById("qty").innerHTML =
+          "Quantity Ordered:" + int1.value;
+        document.getElementById("dig1").innerHTML =
+          "Total Amount:" + int1.value * 80;
+      };
+      btn2.onclick = function () {
+        modal2.style.display = "block";
+        document.getElementById("qty2").innerHTML =
+          "Quantity Ordered:" + int2.value;
+        document.getElementById("dig2").innerHTML =
+          "Total Amount:" + int2.value * 20;
+      };
+      btn3.onclick = function () {
+        modal3.style.display = "block";
+        document.getElementById("qty3").innerHTML =
+          "Quantity Ordered:" + int3.value;
+        document.getElementById("dig3").innerHTML =
+          "Total Amount:" + int3.value * 150;
+      };
+      btn4.onclick = function () {
+        modal4.style.display = "block";
+        document.getElementById("qty4").innerHTML =
+          "Quantity Ordered:" + int4.value;
+        document.getElementById("dig4").innerHTML =
+          "Total Amount:" + int4.value * 300;
+      };
+      btn5.onclick = function () {
+        modal5.style.display = "block";
+        document.getElementById("qty5").innerHTML =
+          "Quantity Ordered:" + int5.value;
+        document.getElementById("dig5").innerHTML =
+          "Total Amount:" + int5.value * 120;
+      };
+      span.onclick = function () {
+        span.style.display = "none";
+      };
+      window.onclick = function (event) {
+        if (event.target == modal1) {
+          modal1.style.display = "none";
+        }
+        if (event.target == modal2) {
+          modal2.style.display = "none";
+        }
+        if (event.target == modal3) {
+          modal3.style.display = "none";
+        }
+        if (event.target == modal4) {
+          modal4.style.display = "none";
+        }
+        if (event.target == modal5) {
+          modal5.style.display = "none";
+        }
+      };
+      // inserting a text  after the text.
+      function view() {
+        var a = document.getElementById("value").value;
+        var num = parseInt(a);
+        var b = 80;
+        var c = num * b;
+        console.log("asdfghjhgfdfdsdaaafghggf", c);
+      }
+      function myFunc() {
+        alert("Thanks for Placing the Order!!!!");
+        modal1.style.display = "none";
+        modal2.style.display = "none";
+        modal3.style.display = "none";
+        modal4.style.display = "none";
+        modal5.style.display = "none";
+      }
+    </script>
+  </body>
+</html>

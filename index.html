@@ -1,0 +1,303 @@
+<!-- creation of complex website -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flipkart</title>
+    <link rel="shortcut icon" href="./img/favicon.png.png" />
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
+  </head>
+  <body>
+    <!-- creation of navigation area -->
+    <nav class="heading_navigation flex" id="navigation_heading">
+      <div class="nav_container flex">
+        <div class="logo flex">
+          <img src="./img/flipkart logo.png" alt="logo" align="center" />
+        </div>
+        <div class="search_bar_container">
+          <div class="search_bar">
+            <form class="search">
+              <input
+                type="text"
+                placeholder="search for products, brands and more"
+                class="search_box"
+              />
+              <span><i class="fa fa-search"></i></span>
+              <button class="login" type='submit'onclick="openForm()">LOGIN</button>
+              <span id="sell">Become a Seller</span>
+              <span id="more">
+                <div>
+                  More <i class="fa fa-angle-down"></i>
+
+                  <div class="dropdown_content">
+                    <a href="#">Notification Preference</a>
+                    <a href="#">24x7 Customer Care</a>
+                    <a href="#">Advertise</a>
+                    <a href="https://play.google.com/store/apps/details?id=com.flipkart.android&hl=en">Download App</a>
+                  </div>
+                </div>
+              </span>
+              <span id="cart"><i class="fa fa-cart-plus"></i> Cart</span>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- creating of head categories -->
+    <div class="heading_categories flex">
+      <ul class="heading_categories_list">
+        <li class="heading_categories_items">
+          <a href="grocery.html">
+          <img
+            src="./img/groceries.jpg"
+            alt="loading image"
+            class="cat_image"
+          />
+          <div>
+            <p class="heading_item_name grocery">
+              Groceries <i class="fa fa-angle-down"></i> 
+            </p>
+          </div>
+          </a>
+        </li>
+        <li class="heading_categories_items">
+          <a href=""></a>
+          <img
+            src="./img/groceries.jpg"
+            alt="loading image"
+            class="cat_image"
+          />
+          <p class="heading_item_name">
+            Beauty <i class="fa fa-angle-down"></i>
+          </p>
+        </li>
+        <li class="heading_categories_items">
+          <img
+            src="./img/groceries.jpg"
+            alt="loading image"
+            class="cat_image"
+          />
+          <p class="heading_item_name">
+            Clothings <i class="fa fa-angle-down"></i>
+          </p>
+        </li>
+        <li class="heading_categories_items">
+          <img
+            src="./img/groceries.jpg"
+            alt="loading image"
+            class="cat_image"
+          />
+          <p class="heading_item_name">Toys <i class="fa fa-angle-down"></i></p>
+        </li>
+        <li class="heading_categories_items">
+          <img
+            src="./img/groceries.jpg"
+            alt="loading image"
+            class="cat_image"
+          />
+          <p class="heading_item_name">
+            Home Appliance <i class="fa fa-angle-down"></i>
+          </p>
+        </li>
+        <li class="heading_categories_items">
+          <img
+            src="./img/groceries.jpg"
+            alt="loading image"
+            class="cat_image"
+          />
+          <p class="heading_item_name">
+            Electronics <i class="fa fa-angle-down"></i>
+          </p>
+        </li>
+        <li class="heading_categories_items">
+          <img
+            src="./img/groceries.jpg"
+            alt="loading image"
+            class="cat_image"
+          />
+          <p class="heading_item_name">
+            Footwear <i class="fa fa-angle-down"></i>
+          </p>
+        </li>
+      </ul>
+    </div>
+    <!-- creating of corousel container -->
+    <div class="slide">
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide"><img src="./img/toys-banner.jpg"></div>
+          <div class="swiper-slide"><img src="./img/Home Appliances.jpg"></div>
+          <div class="swiper-slide"><img src="./img/electronics.jpg"></div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+      
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </div>
+    <!-- small card -->
+    <div class="card flex">
+      <p id="icici">ICICI BANK</p>
+      <p id="axis">AXIS BANK</p>
+      <p id="discount">Get 10% Discount on Products*</p>
+      <button id="move">></button>
+    </div>
+    <!-- card view -->
+    <div class="head">
+      <h2>BEST DEALS OF THE DAY</h2>
+    </div>
+    <div class="card-view">
+      <div class="first">
+        <h3>LG Android Plus TV</h3>
+        <img src="./img/lg tv.jpg" />
+        <!-- <div>
+          <p>With Advanced Visionn Technology.</p>
+        </div> -->
+      </div>
+      <div class="second">
+        <h3>VIVO Y20 mobile</h3>
+        <img src="./img/vivo mobile.jpg" />
+      </div>
+      <div class="third">
+        <h3>SAMSUNG Intelligent Air Conditioner</h3>
+        <img src="./img/air-conditioner.jpg" />
+      </div>
+    </div>
+    <!-- creation of chatbot messaging -->
+    <div class="container">
+      <div class="chat-header">
+        <div class="title">Let's Chat</div>
+      </div>
+        <div class="chat-body"></div>
+          <div class="chat-input">
+            <div class="input-sec">
+              <input type="text" id="txtinput" placeholder="type here" autofocus>
+            </div>
+            <div class="send">
+              <img src="./img/send-message.png">
+            </div>
+          </div>
+    </div>
+    <footer>
+      <h4 class="desc">Flipkart: The One-stop Shopping Destination</h4>
+      <p>
+        E-commerce is revolutionizing the way we all shop in India. Why do you
+        want to hop from one store to another in search of the latest phone when
+        you can find it on the Internet in a single click? Not only mobiles.
+        Flipkart houses everything you can possibly imagine, from trending
+        electronics like laptops, tablets, smartphones, and mobile accessories
+        to in-vogue fashion staples like shoes, clothing and lifestyle
+        accessories; from modern furniture like sofa sets, dining tables, and
+        wardrobes to appliances that make your life easy like washing machines,
+        TVs, ACs, mixer grinder juicers and other time-saving kitchen and small
+        appliances; from home furnishings like cushion covers, mattresses and
+        bedsheets to toys and musical instruments, we got them all covered. You
+        name it, and you can stay assured about finding them all here. For those
+        of you with erratic working hours, Flipkart is your best bet. Shop in
+        your PJs, at night or in the wee hours of the morning. This e-commerce
+        never shuts down. What's more, with our year-round shopping festivals
+        and events, our prices are irresistible. We're sure you'll find yourself
+        picking up more than what you had in mind. If you are wondering why you
+        should shop from Flipkart when there are multiple options available to
+        you, well, the below will answer your question.
+      </p>
+      <h4 class="cost">No Cost EMI</h4>
+      <p>
+        In an attempt to make high-end products accessible to all, our No Cost
+        EMI plan enables you to shop with us under EMI, without shelling out any
+        processing fee. Applicable on select mobiles, laptops, large and small
+        appliances, furniture, electronics and watches, you can now shop without
+        burning a hole in your pocket. If you've been eyeing a product for a
+        long time, chances are it may be up for a no cost EMI. Take a look ASAP!
+        Terms and conditions apply.
+      </p>
+      <div class="extra">
+        <div class="about">
+          <h4>ABOUT</h4>
+          <p>Contact Us</p>
+          <p>About Us</p>
+          <p>Careers</p>
+          <p>Flipkart Stories</p>
+          <p>Press</p>
+          <p>Corporate Information</p>
+        </div>
+        <div class="help">
+          <h4>HELP</h4>
+          <p>Payments</p>
+          <p>Shipping</p>
+          <p>Cancellation and Returns</p>
+          <p>FAQ</p>
+          <p>Report infrigement</p>
+        </div>
+        <div class="policy">
+          <h4>RETURNS POLICY</h4>
+          <p>Terms of Use</p>
+          <p>Security</p>
+          <p>Privacy</p>
+          <p>Site map</p>
+          <p>ERP Compilance</p>
+        </div>
+        <div class="social">
+          <h4>SOCIAL</h4>
+          <p>Facebook</p>
+          <p>Twitter</p>
+          <p>Youtube</p>
+        </div>
+        <div class="mail">
+          <h4>MAIL US</h4>
+          <p>Flipkart Internet Private limited,</p>
+          <p>Banglore,</p>
+          <p>Karnataka,</p>
+          <p>India.</p>
+        </div>
+        <div class="office">
+          <h4>REGISTERED OFFICE</h4>
+          <p>Flipkart Internet Private limited,</p>
+          <p>Clove Embassay Tech Village,</p>
+          <p>Banglore 560103,</p>
+          <p>Karnataka,</p>
+          <p>India.</p>
+          <p>Telephone : 044-4568902</p>
+        </div>
+      </div>
+    </footer>
+    <!-- creation of overlay form -->
+    <div id="myOverlay" class="overlay">
+      <span class="closebtn" onclick="closeForm()" title="closeOverlay">&#215</span>
+      <div class="wrap">
+        <h2>Sign Up Here</h2>
+        <form action="#" id="log_form">
+          <center>
+          <label>First Name</label>
+          <input type="text" placeholder="Enter Your First Name">
+          <label>Last Name</label>
+          <input type="text" placeholder="Enter Your Last Name">
+          <label>Contact</label>
+          <input type="text" placeholder="Enter Your Email or Mobile">
+          <label>Password</label>
+          <input type="text" placeholder="Enter Password">
+          <label>Confirmation Password</label>
+          <input type="text" placeholder="Re-Enter Password">
+          <button type="submit">Join Now</button>
+          </center>
+        </form>
+      </div>
+    </div>
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  </body>
+</html>
